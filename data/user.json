@@ -2,13 +2,31 @@
   {
     "name": "Paijo",
     "email": "paijo@test.com",
-    "password": "",
-    "role": "admin"
+    "password": "asd123",
+    "role": "VIP Member"
   },
   {
     "name": "Paijo1",
     "email": "paijo1@test.com",
-    "password": "",
-    "role": "user"
+    "password": "dsa123",
+    "role": "Reguler Member"
+  },
+  {
+    "name": "Paijo2",
+    "email": "paijo2@test.com",
+    "password": "dsa123",
+    "role": "VIP Member"
+  },
+  {
+    "name": "Paijo3",
+    "email": "paijo3@test.com",
+    "password": "dsa123",
+    "role": "Reguler Member"
+  },
+  {
+    "name": "Paijo4",
+    "email": "paijo4@test.com",
+    "password": "dsa123",
+    "role": "Reguler Member"
   }
 ]

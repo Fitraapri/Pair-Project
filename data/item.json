@@ -1,7 +1,27 @@
 [
   {
-    "name": "Paijo",
-    "description": "paijo@test.com",
-    "price": "300000"
+    "name": "GTA V",
+    "description": "Action RPG Game",
+    "price": "340000"
+  },
+  {
+    "name": "The Witcher 3",
+    "description": "Adventure RPG Game",
+    "price": "350000"
+  },
+  {
+    "name": "Monster Hunter World",
+    "description": "Action RPG Game",
+    "price": "330000"
+  },
+  {
+    "name": "Red Dead Redemption 2",
+    "description": "Adventure RPG Game",
+    "price": "640000"
+  },
+  {
+    "name": "Fall Guy",
+    "description": "Party Game",
+    "price": "108000"
   }
 ]
