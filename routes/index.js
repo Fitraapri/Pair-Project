@@ -10,5 +10,6 @@ router.get('/register', regisController.regisForm)
 router.post('/register', regisController.postRegister)
 router.get('/login', loginController.loginForm)
 router.post('/login', loginController.postLogin)
+router.get('/item/:id/beli', Controller.buy)
 
 module.exports = router

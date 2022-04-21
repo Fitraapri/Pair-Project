@@ -13,6 +13,17 @@ class regisController {
         res.redirect('/')
       })
       .catch(err => {
+        const errors = {}
+        if(err.name == 'SequelizeValidationError') {
+          err.errors.forEach(el => {
+            if(errors[el.path]) {
+              errors[el.path].push(el.message)
+            } else {
+              errors[el.path] = [el.message]
+            } 
+          })
+          return res.render('register', {errors})
+        }
         res.send(err)
       })
   }

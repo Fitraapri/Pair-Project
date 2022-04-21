@@ -1,8 +1,13 @@
 [
   {
-    "status": "wishlist"
+    "status": "wishlist",
+    "UserId": 1,
+    "ItemId": 2
+    
   },
   {
-    "status": "purchased"
+    "status": "purchased",
+    "UserId": 1,
+    "ItemId": 2
   }
 ]

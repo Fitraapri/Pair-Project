@@ -8,29 +8,42 @@
   <title>Document</title>
 </head>
 
+<style>
+  .error{
+    font-size: small;
+    color: red;
+    margin-top: -10px;
+  }
+</style>
+
 <body>
   <h1>Register</h1>
-  <hr>
-
+  
   <form action="" method="post">
-    <label for="title">Username</label>
+    <label for="title">Username</label><br>
     <input type="text" name="name" placeholder="Username">
-    <br>
-    <label for="title">Email</label>
+    <br><br>
+    <div class="error">
+      <% if(errors.name) {%>
+        <%= errors.name.join(',')%>
+      <%}%>
+    </div>
+    <label for="title">Email</label><br>
     <input type="text" name="email" placeholder="Email">
-    <br>
-    <label for="title">Password</label>
+    <br><br>
+    <label for="title">Password</label><br>
     <input type="password" name="password" placeholder="Password">
-    <br>
-    <label for="title">Address</label>
+    <br><br>
+    <label for="title">Address</label><br>
     <input type="text" name="eddress" placeholder="Address">
-    <br>
-    <label for="title">Role</label>
+    <br><br>
+    <label for="title">Role</label><br>
     <select name="role" id="">
+      <option selected disabled>---Select One---</option>
       <option value="VIP">VIP</option>
       <option value="Reguler">Reguler</option>
     </select>
-    <br>
+    <br><br>
     <button type="submit">Submit</button>
   </form>
 </body>

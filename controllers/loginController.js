@@ -20,7 +20,7 @@ class loginController {
         if (!cekPass) {
           res.render('Password salah')
         }
-        res.redirect('/')
+        res.redirec('/')
       })
       .catch(err => {
         res.render(err)
