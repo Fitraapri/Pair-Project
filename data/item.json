@@ -2,26 +2,31 @@
   {
     "name": "GTA V",
     "description": "Action RPG Game",
-    "price": "340000"
+    "price": "340000",
+    "imageUrl": "https://images.tokopedia.net/img/cache/500-square/product-1/2018/3/26/4200726/4200726_7e1252e0-3a43-4843-b0fc-20987ee153ef_819_1004.png"
   },
   {
     "name": "The Witcher 3",
     "description": "Adventure RPG Game",
-    "price": "350000"
+    "price": "350000",
+    "imageUrl": "https://kbimages1-a.akamaihd.net/3ada3e3f-bae2-4044-a5f1-c65ed27e7453/1200/1200/False/the-witcher-3-wild-hunt-strategy-guide.jpg"
   },
   {
     "name": "Monster Hunter World",
     "description": "Action RPG Game",
-    "price": "330000"
+    "price": "330000",
+    "imageUrl": "https://steamcdn-a.akamaihd.net/steam/apps/582010/header.jpg"
   },
   {
     "name": "Red Dead Redemption 2",
     "description": "Adventure RPG Game",
-    "price": "640000"
+    "price": "640000",
+    "imageUrl": "https://img.g2a.com/1080x1080/1x1x0/red-dead-redemption-2-xbox-live-xbox-one-key-europe/5d6525b546177c28032dbd12"
   },
   {
     "name": "Fall Guy",
     "description": "Party Game",
-    "price": "108000"
+    "price": "108000",
+    "imageUrl": "https://oyimedia.com/wp-content/uploads/2020/08/Fall-Guys.jpg"
   }
 ]
