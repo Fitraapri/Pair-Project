@@ -9,24 +9,24 @@
     "name": "The Witcher 3",
     "description": "Adventure RPG Game",
     "price": "350000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg"
   },
   {
     "name": "Monster Hunter World",
     "description": "Action RPG Game",
     "price": "330000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1b/Monster_Hunter_World_cover_art.jpg"
   },
   {
     "name": "Red Dead Redemption 2",
     "description": "Adventure RPG Game",
     "price": "640000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg"
   },
   {
     "name": "Fall Guy",
     "description": "Party Game",
     "price": "108000",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Fall_Guys_cover.jpg"
   }
 ]
