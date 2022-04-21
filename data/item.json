@@ -2,26 +2,31 @@
   {
     "name": "GTA V",
     "description": "Action RPG Game",
-    "price": "340000"
+    "price": "340000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
   },
   {
     "name": "The Witcher 3",
     "description": "Adventure RPG Game",
-    "price": "350000"
+    "price": "350000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
   },
   {
     "name": "Monster Hunter World",
     "description": "Action RPG Game",
-    "price": "330000"
+    "price": "330000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
   },
   {
     "name": "Red Dead Redemption 2",
     "description": "Adventure RPG Game",
-    "price": "640000"
+    "price": "640000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
   },
   {
     "name": "Fall Guy",
     "description": "Party Game",
-    "price": "108000"
+    "price": "108000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/id/a/a5/Grand_Theft_Auto_V.png"
   }
 ]
