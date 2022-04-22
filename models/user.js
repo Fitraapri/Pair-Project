@@ -16,10 +16,65 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   User.init({
-    name: DataTypes.STRING,
-    email: DataTypes.STRING,
-    password: DataTypes.STRING,
-    role: DataTypes.STRING
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: true,
+        notEmpty: {
+          msg: 'Nama tidak boleh kosong'
+        }
+      }
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: true,
+        notEmpty: {
+          msg: 'Email tidak boleh kosong'
+        },
+        isEmail: {
+          args: true,
+          msg: 'Email tidak valid'
+        }
+      }
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: true,
+        notEmpty: {
+          msg: 'Password tidak boleh kosong'
+        },
+        len: {
+          args: [8, 16],
+          msg: 'Password minimum 8 character dan maksimal 16 character'
+        }
+      }
+    },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: true,
+        notEmpty: {
+          msg: 'Alamat tidak boleh kosong'
+        }
+      }
+    },
+    role:{
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          args: true,
+          msg: 'Pilih salah satu role'
+        }
+        
+      }
+    },
   }, {
     sequelize,
     modelName: 'User',

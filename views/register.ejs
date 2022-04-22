@@ -20,30 +20,50 @@
   <h1>Register</h1>
   
   <form action="" method="post">
-    <label for="title">Username</label><br>
+    <label for="name">Username</label><br>
     <input type="text" name="name" placeholder="Username">
     <br><br>
     <div class="error">
       <% if(errors.name) {%>
-        <%= errors.name.join(',')%>
+        <%= errors.name.join(', ') %>
       <%}%>
     </div>
-    <label for="title">Email</label><br>
+    <label for="email">Email</label><br>
     <input type="text" name="email" placeholder="Email">
     <br><br>
-    <label for="title">Password</label><br>
+    <div class="error">
+      <% if(errors.email) {%>
+        <%= errors.email.join(', ') %>
+      <%}%>
+    </div>
+    <label for="password">Password</label><br>
     <input type="password" name="password" placeholder="Password">
     <br><br>
-    <label for="title">Address</label><br>
-    <input type="text" name="eddress" placeholder="Address">
+    <div class="error">
+      <% if(errors.password) {%>
+        <%= errors.password.join(', ') %>
+      <%}%>
+    </div>
+    <label for="Address">Address</label><br>
+    <input type="text" name="address" placeholder="Address">
     <br><br>
-    <label for="title">Role</label><br>
+    <div class="error">
+      <% if(errors.address) {%>
+        <%= errors.address.join(', ') %>
+      <%}%>
+    </div>
+    <label for="role">Role</label><br>
     <select name="role" id="">
       <option selected disabled>---Select One---</option>
       <option value="VIP">VIP</option>
       <option value="Reguler">Reguler</option>
     </select>
     <br><br>
+    <div class="error">
+      <% if(errors.role) {%>
+        <%= errors.role.join(', ') %>
+      <%}%>
+    </div>
     <button type="submit">Submit</button>
   </form>
 </body>
