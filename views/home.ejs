@@ -34,36 +34,30 @@
       </div>
     </div>
   </nav>
-  <table border="1">
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Image</th>
-      <th>Action</th>
-    </tr>
-    <%Item.forEach(el=>{%>
-      <tr>
-        <td>
-          <%=el.name%>
-        </td>
-        <td>
-          <%=el.description%>
-        </td>
-        <td>
-          <%=el.price%>
-        </td>
-        <td>
-          <img src="<%= el.imageUrl %>" alt="" height="50" width="50">
+  <div class="d-flex gap-4">
 
-        </td>
-        <td>
-          <button type="button" class="btn btn-outline-dark">Add</button>
-        </td>
-      </tr>
-      <%})%>
-  </table>
-
+    <div class="row">
+      <% Item.forEach(el=> {%>
+        <div class="col-4">
+          <div class="card">
+            <img src="<%= el.imageUrl %>" alt="Image" width="355" height="400">
+            <div class="container">
+              <h4 class="h-10"><b>
+                  <%= el.name %>
+                </b></h4>
+              <p>
+                <%= el.description %>
+              </p>
+              <h3>
+                <%= el.price%>
+              </h3>
+              <a href="/item/<%= el.id %>/beli"><button class="btn btn-primary">Beli</button></a>
+            </div>
+          </div>
+        </div>
+        <%})%>
+    </div>
+  </div>
 </body>
 
 </html>
