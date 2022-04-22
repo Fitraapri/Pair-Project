@@ -17,7 +17,13 @@ module.exports = (sequelize, DataTypes) => {
   Item.init({
     name: DataTypes.STRING,
     description: DataTypes.STRING,
-    price: DataTypes.INTEGER,
+    price: {
+      type: DataTypes.INTEGER,
+      get() {
+        const value = this.getDataValue('price')
+        return value ? new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'IDR' }).format(value) : null
+      }
+    },
     imageUrl: DataTypes.STRING
   }, {
     sequelize,

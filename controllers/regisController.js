@@ -13,7 +13,7 @@ class regisController {
         res.redirect('/')
       })
       .catch(err => {
-        res.send(err)
+        res.send('error')
       })
   }
 }
