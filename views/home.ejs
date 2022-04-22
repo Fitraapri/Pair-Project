@@ -54,6 +54,15 @@
     <a class="active" href="/">Home</a>
 </div>
 <br><br>
+<div class="container">
+    <form action="/" method="GET">
+        <div class="wrapper">
+            <div class="search-container">
+                <input type="text" name="search" class="search" placeholder="Search by name">
+                <button type="submit" class="btn btn-primary">Search</button><br><br>
+            </div>
+        </div>
+    </form>
   <a href="/register">Register</a>
   <a href="/login">Login</a>
 
@@ -63,7 +72,7 @@
         <% Item.forEach(el => {%>
             <div class="col-4">
                 <div class="card">
-                    <img src="<%= el.imageUrl %>" alt="Image" width="430" height="500">
+                    <img src="<%= el.imageUrl %>" alt="Image" width="355" height="400">
                     <div class="container">
                         <h4 class="h-10"><b><%= el.name %></b></h4>
                         <p>

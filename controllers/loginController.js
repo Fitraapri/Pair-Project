@@ -23,6 +23,7 @@ class loginController {
         res.redirec('/')
       })
       .catch(err => {
+        console.log(err)
         res.render(err)
       })
   }

@@ -4,6 +4,27 @@ const formatPrice = require('../helpers/formatPrice')
 
 class Controller {
   static home(req, res) {
+  //   const {search} = req.query
+
+  //   if(!search) {
+  //     search = ''
+  //   }
+  //   Item.findAll({
+  //     where: {
+  //       name: { [Op.like]: `%${search}%` }
+  //     }
+  // })
+  // .then(Item => {
+  //   res.render('home', { Item, formatPrice })
+  // })
+  // .catch(err => {
+  //   res.send(err)
+  // })
+
+
+
+
+
     Item
       .findAll()
       .then(Item => {
@@ -13,6 +34,11 @@ class Controller {
         res.send(err)
       })
   }
+
+  
+
+
+
 
   static buy(req, res) {
     let { id } = req.params
